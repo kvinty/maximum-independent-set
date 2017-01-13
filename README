@@ -1,0 +1,17 @@
+Maximum independent set
+
+Author: Paul-Nicolas Madelaine
+Language: C 99
+
+This project is an implementation of the measure and conquer method for the maximum independent set problem. The measure and conquer method and the algorithm are described in this article:
+https://web.stanford.edu/~rrwill/presentations/measure-and-conquer.pdf
+
+To compile, simply run the make command in the main directory. The executable is located at bin/directory. It takes one obligatory argument, the input file, and one optional argument, the output file. 'mis' will display the size of a maximum independent set for the graph described in the input file and it will write such a set in the ouput file if one is specified.
+
+The input file is a text file describing a graph. The first line contains an integer n which states the number of vertices. After this, there are n lines. Each line represents one vertex. It contains the number of neighbours of this vertex followed by the list of neighbours (0-based indices).
+
+Example of a circular graph of size 3:
+3
+2 1 2
+2 0 2
+2 0 1
