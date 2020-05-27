@@ -35,7 +35,7 @@ Array* mis(Graph *input)
 
 Array* core()
 {
-  int d_max = -1, v;
+  int d_max = -1, v = 0;
   for(int w=0; w<graph->size; w++){
     if(OUT & graph->mark[w])
       continue;
