@@ -21,7 +21,7 @@ Array* mis(Graph *input)
     push(u, pile);
   }
 
-  Array *l = check(graph);
+  Array *l = check();
 
   while(deleted->size != 0)
     graph->mark[pop(deleted)] ^= OUT;
