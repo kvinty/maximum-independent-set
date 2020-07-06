@@ -1,7 +1,7 @@
-.PHONY: all build test clean
-
 CXX=g++
 CXXFLAGS=-std=c++17 -Wall -Wextra -Wpedantic -O3
+
+.PHONY: all build test clean
 
 all: build
 
